@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Young Catholic Students at Orogare Technical Training College">
-    <title>YCS Orogare TTC</title>
+    <meta name="description" content="Young Catholic Students at Orogare Technical Training College - Growing in Faith, Building Community, Serving with Love">
+    <title>YCS Orogare TTC - Young Catholic Students</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Announcement Bar -->
     <div class="announcement-bar" id="announceBar">
         <span>✝️ YCS Fellowship Every Wednesday at 5:00 PM - All Students Welcome! 🕊️</span>
-        <button onclick="this.parentElement.style.display='none'">&times;</button>
+        <button onclick="this.parentElement.style.display='none'" aria-label="Close">&times;</button>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="logo">
@@ -29,14 +31,18 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#activities">Activities</a></li>
                 <li><a href="#events">Events</a></li>
+                <li><a href="#prayers">Prayers</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#join">Join</a></li>
             </ul>
-            <a href="#join" class="btn btn-nav">Join YCS</a>
-            <button class="hamburger" id="hamburger">☰</button>
+            <div class="nav-actions">
+                <a href="#join" class="btn btn-nav">Join YCS</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+            </div>
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
             <span class="hero-badge">Orogare Technical Training College</span>
@@ -44,12 +50,13 @@
             <p class="hero-subtitle">Growing in Faith • Building Community • Serving with Love</p>
             <p>A vibrant community pursuing technical excellence while deepening faith through <strong>See, Judge, Act</strong>.</p>
             <div class="hero-btns">
-                <a href="#join" class="btn btn-primary">Join YCS Today</a>
+                <a href="#join" class="btn btn-primary">🙏 Join YCS Today</a>
                 <a href="#about" class="btn btn-outline">Learn More</a>
             </div>
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
@@ -72,14 +79,15 @@
                     <h3>Why Join?</h3>
                     <p>Balance technical training with spiritual growth. Develop leadership skills, serve others, and form lifelong friendships in a supportive Catholic community.</p>
                 </div>
-                <div class="bible-box">
+                <div class="bible-box" id="bibleBox">
                     <p id="bibleVerse">"For I know the plans I have for you," declares the LORD, "plans to give you hope and a future."</p>
-                    <span>— Jeremiah 29:11</span>
+                    <span id="verseRef">— Jeremiah 29:11</span>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Core Values -->
     <section class="section bg-light">
         <div class="container">
             <div class="section-header">
@@ -95,6 +103,7 @@
         </div>
     </section>
 
+    <!-- Activities -->
     <section id="activities" class="section">
         <div class="container">
             <div class="section-header">
@@ -102,33 +111,66 @@
                 <h2>Our Activities</h2>
             </div>
             <div class="activities-grid">
-                <div class="act-card"><div class="act-img" style="background:#1a4d82;">⛪</div><div class="act-body"><h3>Termly Mass & Prayer</h3><p>Holy Mass every term at 8 AM at the college chapel.</p><span class="time-badge">8AM-1300HRS</span></div></div>
+                <div class="act-card"><div class="act-img" style="background:#1a4d82;">⛪</div><div class="act-body"><h3>Weekly Mass & Prayer</h3><p>Holy Mass every Wednesday at 5 PM at the college chapel.</p><span class="time-badge">Wednesdays, 5:00 PM</span></div></div>
                 <div class="act-card"><div class="act-img" style="background:#1a5276;">📖</div><div class="act-body"><h3>Bible Study & Formation</h3><p>Small groups exploring Scripture and its application to student life.</p><span class="time-badge">Fridays, 4:30 PM</span></div></div>
                 <div class="act-card"><div class="act-img" style="background:#1a6e5c;">🤲</div><div class="act-body"><h3>Community Outreach</h3><p>Monthly visits to children's homes, hospitals, and clean-up projects.</p><span class="time-badge">Monthly Saturdays</span></div></div>
                 <div class="act-card"><div class="act-img" style="background:#6b3a6b;">🏔️</div><div class="act-body"><h3>Retreats & Camps</h3><p>Quarterly retreats for deep reflection, prayer, and team building.</p><span class="time-badge">Quarterly</span></div></div>
-                <div class="act-card"><div class="act-img" style="background:#8b4513;">🎵</div><div class="act-body"><h3>Choir & Liturgical Dance</h3><p>Express faith through sacred music and dance at Mass and events.</p><span class="time-badge">Tue & Thu, 4pm:00 PM</span></div></div>
+                <div class="act-card"><div class="act-img" style="background:#8b4513;">🎵</div><div class="act-body"><h3>Choir & Liturgical Dance</h3><p>Express faith through sacred music and dance at Mass and events.</p><span class="time-badge">Tue & Thu, 6:00 PM</span></div></div>
                 <div class="act-card"><div class="act-img" style="background:#2e7d32;">🌿</div><div class="act-body"><h3>Environmental Action</h3><p>Tree planting and awareness on caring for creation (Laudato Si').</p><span class="time-badge">Termly Events</span></div></div>
             </div>
         </div>
     </section>
 
+    <!-- Events -->
     <section id="events" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <span class="tag">Calendar</span>
                 <h2>Upcoming Events</h2>
             </div>
-            <div class="events-list">
-                <div class="event-card"><div class="event-date"><span class="day">3</span><span class="month"><JA-MAY-SEP></JA-MAY-SEP></span></div><div><h3>College Mass & Fellowship</h3><p>📍 College Chapel | 🕐 10 AM - 1 PM</p><p class="desc">Special mass on "Faith in the Digital Age"</p></div></div>
-                <div class="event-card"><div class="event-date"><span class="day">5</span><span class="month">JUN</span></div><div><h3>Community Service Day</h3><p>📍 Children's Home | 🕐 8 AM - 3 PM</p><p class="desc">Visiting children, donation drive, and clean-up</p></div></div>
-                <div class="event-card"><div class="event-date"><span class="day">00</span><span class="month">JUL</span></div><div><h3>Mid-Year Retreat</h3><p>📍 Subukia Shrine | 🕐 Full Weekend</p><p class="desc">Theme: "Becoming Salt and Light"</p></div></div>
-                <div class="event-card"><div class="event-date"><span class="day">17</span><span class="month">JUL</span></div><div><h3>Environmental Campaign</h3><p>📍 College Grounds | 🕐 9 AM - 12 PM</p><p class="desc">Tree planting and awareness walk</p></div></div>
-                <div class="event-card"><div class="event-date"><span class="day">27</span><span class="month">JUL</span></div><div><h3>YCS Rally</h3><p>📍 kisii kmtc | 🕐 9 AM - 4 PM</p><p class="desc">inter-colleges rally</p></div></div>
+            <div class="events-list" id="eventsList">
+                <div class="event-card"><div class="event-date"><span class="day">15</span><span class="month">JUN</span></div><div><h3>Youth Mass & Fellowship</h3><p>📍 College Chapel | 🕐 10 AM - 1 PM</p><p class="desc">Special mass on "Faith in the Digital Age"</p></div></div>
+                <div class="event-card"><div class="event-date"><span class="day">22</span><span class="month">JUN</span></div><div><h3>Community Service Day</h3><p>📍 St. Anne's Children's Home | 🕐 8 AM - 3 PM</p><p class="desc">Visiting children, donation drive, and clean-up</p></div></div>
+                <div class="event-card"><div class="event-date"><span class="day">05</span><span class="month">JUL</span></div><div><h3>Mid-Year Retreat</h3><p>📍 Subukia Shrine | 🕐 Full Weekend</p><p class="desc">Theme: "Becoming Salt and Light"</p></div></div>
             </div>
         </div>
     </section>
 
-    <section id="gallery" class="section">
+    <!-- Prayer Requests -->
+    <section id="prayers" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="tag">Intercessory Prayer</span>
+                <h2>🙏 Prayer Requests</h2>
+                <p class="section-description">Share your intentions. Our community will pray for you.</p>
+            </div>
+            <div class="prayer-grid">
+                <div class="prayer-form-box">
+                    <h3>Submit Prayer Request</h3>
+                    <form id="prayerForm">
+                        <textarea id="prayerIntention" rows="4" placeholder="Lord, I pray for..." required></textarea>
+                        <div class="prayer-options">
+                            <label><input type="checkbox" id="prayerAnonymous" checked> Submit anonymously</label>
+                            <label><input type="checkbox" id="prayerPublic"> Share in prayer wall</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">🙏 Send Prayer Request</button>
+                    </form>
+                </div>
+                <div class="prayer-wall">
+                    <h3>Community Prayer Wall</h3>
+                    <div id="prayerIntentions">
+                        <div class="prayer-card"><p>"For all students preparing for exams. May the Lord grant them wisdom."</p><span class="prayer-time">🕐 2 hours ago</span></div>
+                        <div class="prayer-card"><p>"For our YCS retreat this month. May it bring spiritual renewal."</p><span class="prayer-time">🕐 5 hours ago</span></div>
+                        <div class="prayer-card"><p>"For peace in our country. Lord, have mercy."</p><span class="prayer-time">🕐 1 day ago</span></div>
+                    </div>
+                    <p id="prayerCount" style="text-align:center;margin-top:15px;color:#6c757d;font-style:italic;">3 prayer intentions shared</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section bg-light">
         <div class="container">
             <div class="section-header">
                 <span class="tag">Memories</span>
@@ -139,19 +181,19 @@
                 <div class="gallery-item" style="background:#1a5276;">🤲<br>Service</div>
                 <div class="gallery-item" style="background:#1a6e5c;">🎵<br>Choir</div>
                 <div class="gallery-item" style="background:#6b3a6b;">📖<br>Bible Study</div>
-                <div class="gallery-item" style="background:#8b4513;">🌳<br>Tree Planting</div>
+                <div class="gallery-item" style="background:#8b4513;">🌳<br>Planting</div>
                 <div class="gallery-item" style="background:#2e7d32;">👥<br>Fellowship</div>
-                <div class="gallery-item" style="background:#4a148c;">🙏<br>Retreat</div>
-                <div class="gallery-item" style="background:#b71c1c;">📅<br>YCS Day</div>
             </div>
         </div>
     </section>
 
-    <section id="join" class="section bg-light">
+    <!-- Join Section -->
+    <section id="join" class="section">
         <div class="container">
             <div class="section-header">
                 <span class="tag">Membership</span>
                 <h2>Join YCS Today</h2>
+                <p class="section-description">Become part of a vibrant Catholic community</p>
             </div>
             <div class="join-grid">
                 <div>
@@ -167,8 +209,8 @@
                     <div class="contact-box">
                         <h4>Contact Us:</h4>
                         <p>📧 ycs@orogarettech.ac.ke</p>
-                        <p>📱 +254 724779598</p>
-                        <p>📍 College Patron, Orogare TTC</p>
+                        <p>📱 +254 712 345 678</p>
+                        <p>📍 College Chapel, Orogare TTC</p>
                         <p>🕐 Mon-Fri, 4 PM - 6 PM</p>
                     </div>
                 </div>
@@ -195,13 +237,15 @@
                         <input type="tel" id="phone" placeholder="Phone Number *" required>
                         <input type="email" id="email" placeholder="Email Address">
                         <textarea id="message" placeholder="Why do you want to join YCS?" rows="3"></textarea>
-                        <button type="submit" class="btn btn-primary" style="width:100%;">Submit Registration</button>
+                        <button type="submit" class="btn btn-primary" style="width:100%;">📝 Submit Registration</button>
+                        <p id="formStatus" style="text-align:center;margin-top:10px;font-size:0.8rem;color:#6c757d;"></p>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -224,11 +268,15 @@
         </div>
     </footer>
 
+    <!-- Floating Buttons -->
     <a href="#join" class="fab">🙏 Join</a>
-    <a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank">💬</a>
-    <button class="back-top" id="backTop">↑</button>
+    <a href="https://wa.me/254712345678" class="whatsapp-btn" target="_blank" rel="noopener">💬</a>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
     <div class="toast" id="toast"></div>
 
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="api.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
